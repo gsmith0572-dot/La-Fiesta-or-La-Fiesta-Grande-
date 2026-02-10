@@ -6,86 +6,70 @@ Sitio web oficial de La Fiesta Natchez - Restaurante mexicano en Natchez, Missis
 - **Producción**: https://lafiestanatchez.com
 - **Firebase Hosting**: https://la-fiesta-natchez.web.app
 
+## 📁 UBICACIÓN DEL PROYECTO
+**SIEMPRE trabaja desde**: `~/Desktop/Apps/La-Fiesta-or-La-Fiesta-Grande-`
+
+Este proyecto está sincronizado con GitHub. Todos los cambios se hacen aquí.
+
 ## 🛠️ Tecnologías
 - React 19
 - Vite
 - Firebase Hosting
 - Cloudflare CDN
-- Framer Motion (animaciones)
+- Framer Motion
 - React Router DOM
 
-## 📁 Estructura del Proyecto
-```
-la-fiesta-natchez/
-├── src/              # Código fuente React
-├── public/           # Assets públicos (imágenes)
-├── dist/             # Build de producción
-├── firebase.json     # Configuración Firebase
-└── vite.config.js    # Configuración Vite
+## 🚀 Workflow Completo
+
+### 1. Navegar al proyecto
+```bash
+cd ~/Desktop/Apps/La-Fiesta-or-La-Fiesta-Grande-
 ```
 
-## 🚀 Desarrollo Local
+### 2. Pull últimos cambios de GitHub
+```bash
+git pull origin main
+```
 
-### Instalar dependencias
+### 3. Instalar/actualizar dependencias
 ```bash
 npm install
 ```
 
-### Ejecutar en modo desarrollo
+### 4. Desarrollo local
 ```bash
 npm run dev
 ```
 
-### Build para producción
+### 5. Build para producción
 ```bash
 npm run build
 ```
 
-## 📦 Deployment
-
-### Deploy a Firebase Hosting
+### 6. Deploy a Firebase
 ```bash
-npm run build
 firebase deploy --project la-fiesta-natchez
 ```
 
-### Verificar deployment
+### 7. Guardar cambios en GitHub
 ```bash
-~/check-lafiesta.sh
-```
-
-## 🔧 Cuentas y Configuración
-
-- **Firebase Account**: gsmith0572@gmail.com
-- **Project ID**: la-fiesta-natchez
-- **Dominio**: Cloudflare (lafiestanatchez.com)
-- **Repositorio**: https://github.com/gsmith0572-dot/La-Fiesta-or-La-Fiesta-Grande-
-
-## 📝 Comandos Útiles
-```bash
-# Verificar estado del sitio
-~/check-lafiesta.sh
-
-# Ver logs de Firebase
-firebase hosting:channel:list --project la-fiesta-natchez
-
-# Cambiar de cuenta Firebase
-firebase logout
-firebase login
-
-# Actualizar GitHub
 git add .
 git commit -m "Descripción de cambios"
 git push origin main
 ```
 
-## 🆘 Troubleshooting
+### 8. Verificar todo funcione
+```bash
+~/check-lafiesta.sh
+```
 
-Si el sitio no carga:
-1. Limpiar caché del navegador (Cmd + Shift + R)
-2. Verificar en modo incógnito
-3. Ejecutar `~/check-lafiesta.sh`
-4. Verificar consola del navegador (Option + Cmd + J)
+## 🔧 Configuración
+- **Firebase**: gsmith0572@gmail.com
+- **Project ID**: la-fiesta-natchez
+- **GitHub**: https://github.com/gsmith0572-dot/La-Fiesta-or-La-Fiesta-Grande-
 
-## 📅 Último Deploy
-24 de diciembre de 2025
+## ✅ Ventajas de este Workflow
+- ✓ Siempre sincronizado con GitHub
+- ✓ Historial de cambios completo
+- ✓ Fácil de restaurar versiones anteriores
+- ✓ Colaboración simplificada
