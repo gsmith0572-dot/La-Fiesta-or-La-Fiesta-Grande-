@@ -1,0 +1,107 @@
+/* Testimonials Section */
+.testimonials-section {
+    padding: 100px 0;
+    background-color: #f9f9f9;
+}
+
+.testimonials-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.testimonial-content {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    gap: 40px;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.testimonial-image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+.testimonial-text {
+    padding: 0 20px;
+    text-align: center;
+}
+
+.testimonial-quote {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.testimonial-quote .highlight {
+    color: #E4007C;
+    font-weight: 600;
+}
+
+.testimonial-quote em {
+    font-style: italic;
+    font-weight: 500;
+}
+
+.testimonial-author {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.testimonial-text .btn-birthday {
+    margin-top: 20px;
+}
+
+@media (max-width: 1024px) {
+    .testimonial-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .testimonial-image.left {
+        order: 1;
+    }
+
+    .testimonial-text {
+        order: 2;
+        padding: 0;
+    }
+
+    .testimonial-image.right {
+        order: 3;
+    }
+
+    .testimonial-quote,
+    .testimonial-author {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonial-quote {
+        font-size: 1rem;
+    }
+
+    .testimonial-image.right {
+        display: none;
+    }
+}
