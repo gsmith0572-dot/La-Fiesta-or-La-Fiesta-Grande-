@@ -1,16 +1,91 @@
-# React + Vite
+# La Fiesta Natchez
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sitio web oficial de La Fiesta Natchez - Restaurante mexicano en Natchez, Mississippi.
 
-Currently, two official plugins are available:
+## 🌐 Sitio en Vivo
+- **Producción**: https://lafiestanatchez.com
+- **Firebase Hosting**: https://la-fiesta-natchez.web.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tecnologías
+- React 19
+- Vite
+- Firebase Hosting
+- Cloudflare CDN
+- Framer Motion (animaciones)
+- React Router DOM
 
-## React Compiler
+## 📁 Estructura del Proyecto
+```
+la-fiesta-natchez/
+├── src/              # Código fuente React
+├── public/           # Assets públicos (imágenes)
+├── dist/             # Build de producción
+├── firebase.json     # Configuración Firebase
+└── vite.config.js    # Configuración Vite
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Desarrollo Local
 
-## Expanding the ESLint configuration
+### Instalar dependencias
+```bash
+npm install
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Ejecutar en modo desarrollo
+```bash
+npm run dev
+```
+
+### Build para producción
+```bash
+npm run build
+```
+
+## 📦 Deployment
+
+### Deploy a Firebase Hosting
+```bash
+npm run build
+firebase deploy --project la-fiesta-natchez
+```
+
+### Verificar deployment
+```bash
+~/check-lafiesta.sh
+```
+
+## 🔧 Cuentas y Configuración
+
+- **Firebase Account**: gsmith0572@gmail.com
+- **Project ID**: la-fiesta-natchez
+- **Dominio**: Cloudflare (lafiestanatchez.com)
+- **Repositorio**: https://github.com/gsmith0572-dot/La-Fiesta-or-La-Fiesta-Grande-
+
+## 📝 Comandos Útiles
+```bash
+# Verificar estado del sitio
+~/check-lafiesta.sh
+
+# Ver logs de Firebase
+firebase hosting:channel:list --project la-fiesta-natchez
+
+# Cambiar de cuenta Firebase
+firebase logout
+firebase login
+
+# Actualizar GitHub
+git add .
+git commit -m "Descripción de cambios"
+git push origin main
+```
+
+## 🆘 Troubleshooting
+
+Si el sitio no carga:
+1. Limpiar caché del navegador (Cmd + Shift + R)
+2. Verificar en modo incógnito
+3. Ejecutar `~/check-lafiesta.sh`
+4. Verificar consola del navegador (Option + Cmd + J)
+
+## 📅 Último Deploy
+24 de diciembre de 2025
