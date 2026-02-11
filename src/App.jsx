@@ -28,7 +28,7 @@ const Navbar = () => (
       <div className="nav-links">
         <Link to="/" className="nav-btn">Menu</Link>
         <Link to="/" className="nav-btn">About</Link>
-        <button className="btn-order">Order Online</button>
+        <a href="https://www.doordash.com/store/la-fiesta-grande-restaurante-mexicano-288-john-r-junkin-drive-natchez-34314921/76181370/?pickup=true&utm_campaign=gpa" target="_blank" rel="noopener noreferrer" className="btn-order">Order Online</a>
       </div>
     </div>
   </nav>
